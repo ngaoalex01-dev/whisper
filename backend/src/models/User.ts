@@ -1,6 +1,7 @@
-import mongoose, { Schema, type Document } from "mongoose";
+import mongoose, { Schema, type Document, Types } from "mongoose";
 
 export interface IUser extends Document {
+  _id: Types.ObjectId;
   clerkId: string;
   name: string;
   email: string;
